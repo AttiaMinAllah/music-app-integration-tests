@@ -23,9 +23,17 @@ void main() async {
   Directory? dir = await getTemporaryDirectory();
 
   Hive.init(dir.path);
-  Hive.registerAdapter<AlbumModel>(AlbumModelAdapter());
-  Hive.registerAdapter<ArtistModel>(ArtistModelAdapter());
-  Hive.registerAdapter<TrackModel>(TrackModelAdapter());
+
+  // Conditional Adapter Registration
+  if (!Hive.isAdapterRegistered(AlbumModelAdapter().typeId)) {
+    Hive.registerAdapter<AlbumModel>(AlbumModelAdapter());
+  }
+  if (!Hive.isAdapterRegistered(ArtistModelAdapter().typeId)) {
+    Hive.registerAdapter<ArtistModel>(ArtistModelAdapter());
+  }
+  if (!Hive.isAdapterRegistered(TrackModelAdapter().typeId)) {
+    Hive.registerAdapter<TrackModel>(TrackModelAdapter());
+  }
 
   await EasyLocalization.ensureInitialized();
   runApp(EasyLocalization(
@@ -38,7 +46,6 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
-
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
