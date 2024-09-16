@@ -1,0 +1,32 @@
+# Flutter/Dart/Pub related
+.dart_tool/
+.packages
+.pub-cache/
+build/
+.idea/
+.vscode/
+*.iml
+
+# Generated files
+*.g.dart
+*.mocks.dart
+injection.config.dart
+
+# Flutter specific
+flutter_*.png
+
+# Dependency directories
+ios/Pods/
+android/.gradle/
+android/app/build/
+android/.idea/
+android/local.properties
+
+# Miscellaneous
+.DS_Store
+*.log
+*.bak
+*.swp
+*.lock
+*.lock.json
+pubspec.lock
