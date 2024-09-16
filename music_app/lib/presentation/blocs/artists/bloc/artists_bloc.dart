@@ -25,7 +25,7 @@ class ArtistsBloc extends Bloc<ArtistsEvent, ArtistsState> {
     emit(ArtistSearchLoadingState());
     Resource res = await searchForArtist.call(params: event.params);
     if (res is SuccessResource) {
-      emit(ArtistSearchSucccssState(res.data));
+      emit(ArtistSearchSuccessState(res.data));
     } else {
       emit(ArtistSearchFailedState(res as FailedResource));
     }

@@ -60,10 +60,10 @@ dev_dependencies:
   flutter_lints: any
   retrofit_generator: any
   json_serializable: any
-  build_runner: any
+  build_runner: ^2.0.0
   injectable_generator: any
   test:
-  mockito: any
+  mockito: ^5.0.16
   bloc_test: any
   mocktail: any
   shared_preferences: any

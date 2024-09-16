@@ -73,7 +73,7 @@ class _SearchPageState extends State<SearchPage> {
           },
           state: state,
           builder: (state, context) {
-            if (state is ArtistSearchSucccssState) {
+            if (state is ArtistSearchSuccessState) {
               return GridView.count(
                 crossAxisCount: 2,
                 children: state.artists

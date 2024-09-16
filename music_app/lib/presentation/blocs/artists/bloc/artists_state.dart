@@ -20,7 +20,7 @@ class ArtistSearchFailedState extends ArtistsState implements Failable {
   }
 }
 
-class ArtistSearchSucccssState extends ArtistsState {
-  ArtistSearchSucccssState(this.artists);
+class ArtistSearchSuccessState extends ArtistsState {
+  ArtistSearchSuccessState(this.artists);
   List<Artist> artists;
 }

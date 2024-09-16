@@ -3,7 +3,6 @@ import 'package:music_app/core/utils.dart';
 import 'package:music_app/data/model/album/get_album_tracks_response.dart';
 import 'package:music_app/data/model/artist/artist_search_response.dart';
 import 'package:music_app/data/model/artist/get_top_albums_response.dart';
-
 import 'package:music_app/domin/usecases/artists/search_for_artist.dart';
 import 'package:retrofit/retrofit.dart';
 import 'package:dio/dio.dart';
