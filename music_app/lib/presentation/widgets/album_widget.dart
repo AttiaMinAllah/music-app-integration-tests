@@ -6,15 +6,17 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:music_app/resources/resources.dart';
 
 class AlbumsWidget extends StatelessWidget {
-  // ignore: use_key_in_widget_constructors
   AlbumsWidget(this.album, {this.onClick, this.onFavoriteClick, Key? key})
       : super(key: key);
+  
   final Album album;
   Function? onClick;
   Function? onFavoriteClick;
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
+      key: ValueKey(album.name), // Adding a key to the AlbumsWidget
       onTap: () {
         onClick?.call();
       },
@@ -35,11 +37,12 @@ class AlbumsWidget extends StatelessWidget {
             Align(
               alignment: Alignment.topRight,
               child: FavoriteButton(
+                key: ValueKey('${album.name}${album.isFavorite}'), // Adding a key to the FavoriteButton
                 isFavorite: album.isFavorite,
                 iconColor: AppConst.kAppSecondaryColor,
                 valueChanged: (_isFavorite) {
                   onFavoriteClick?.call(_isFavorite);
-                  print('Is Favorite $_isFavorite)');
+                  print('Is Favorite $_isFavorite');
                 },
               ),
             ),
