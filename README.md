@@ -30,6 +30,7 @@ This Flutter application allows users to explore music, search for artists, view
 - Generate required mock file
     ```bash
     flutter pub run build_runner build
+    
 
 - Run the tests
 ```bash
@@ -40,6 +41,11 @@ This Flutter application allows users to explore music, search for artists, view
 - Run specific Integration tests
 
     flutter test integration_test/<test_file_name>.dart
+```
+  
+- Tests Execution demo
+  
+   https://github.com/user-attachments/assets/8362efc3-5cf9-414c-ac6e-c6ba3e8215d6
 
 
 
