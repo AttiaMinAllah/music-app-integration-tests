@@ -82,7 +82,6 @@ void main() {
 
       expect(find.byKey(ValueKey('A Rush of Blood to the Headfalse')), findsOneWidget);
 
-      // Find and tap the favorite button using mock data
       final favoriteButton = find.byKey(ValueKey('A Rush of Blood to the Headfalse'));
 
       await tester.tap(favoriteButton);

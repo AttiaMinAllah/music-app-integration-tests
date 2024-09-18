@@ -48,6 +48,7 @@ dependencies:
   universal_platform: ^1.0.0
   integration_test:
     sdk: flutter
+  get_it: ^7.7.0
 
 dev_dependencies:
   flutter_test:
