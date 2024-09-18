@@ -44,8 +44,3 @@ This Flutter application allows users to explore music, search for artists, view
 
 
 
-
-
-
-
-
