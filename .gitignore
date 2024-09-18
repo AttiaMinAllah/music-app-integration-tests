@@ -25,3 +25,11 @@ doc/api/
 
 .flutter-plugins
 .flutter-plugins-dependencies
+
+# Ignore iOS-specific files
+music_app/ios/Podfile
+music_app/ios/Podfile.lock
+music_app/ios/Flutter/AppFrameworkInfo.plist
+music_app/ios/Runner/Info.plist
+music_app/ios/Runner.xcodeproj/project.pbxproj
+music_app/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme
